@@ -4,8 +4,6 @@ val carpeta = File("./txtEx3")
 val fitxer = File(carpeta, "arxiuEx3.txt")
 
 fun main(){
-    if(!carpeta.exists()) carpeta.mkdirs() /*crear carpeta*/
-    if(!fitxer.exists()) fitxer.createNewFile() /*crear fitxer*/
     gestioFitxer()
 
     gestioMenu()
@@ -36,8 +34,9 @@ fun mostrarMenu (){
     println("0.Sortir")
 }
 
-fun gestioFitxer(){
- /* ni idea */
+fun gestioFitxer() {
+    if (!carpeta.exists()) carpeta.mkdirs()
+    if (!fitxer.exists()) fitxer.createNewFile()
 }
 
 fun mostrarFitxer(){

@@ -14,7 +14,7 @@ fun gestioMenu(){
     mostrarMenu()
     do{
         mostrarMenu()
-        println("Tria una opcio")
+        println("Tria una opcio:")
         val opcio: Int = readln().toInt()
         when(opcio){
             1 -> mostrarFitxer()

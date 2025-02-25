@@ -1,8 +1,11 @@
 import java.io.File
 
-val carpeta = File("./txt")
-val fitxer = File(carpeta, "arxiu.txt")
+val carpeta = File("./txtEx3")
+val fitxer = File(carpeta, "arxiuEx3.txt")
+
 fun main(){
+    if(!carpeta.exists()) carpeta.mkdirs() /*crear carpeta*/
+    if(!fitxer.exists()) fitxer.createNewFile() /*crear fitxer*/
     gestioFitxer()
 
     gestioMenu()

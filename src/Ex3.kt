@@ -11,7 +11,6 @@ fun main(){
 
 fun gestioMenu(){
     var sortir: Boolean = false
-    mostrarMenu()
     do{
         mostrarMenu()
         println("Tria una opcio:")
